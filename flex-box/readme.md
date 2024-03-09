@@ -21,7 +21,7 @@
 
 # <font color="#DC143C">Flex-flow</font>
 
-- flex-flow: <flex-direction> <flex-wrap>
+- flex-flow: `<flex-direction>` `<flex-wrap>`
 
 # <font color="#DC143C">justify-content</font>
 
@@ -60,4 +60,4 @@
 
 # <font color="#DC143C">flex</font>
 
-- flex: <flex-grow> <flex-shrink> <flex-basis>
+- flex: `<flex-grow>` `<flex-shrink>` `<flex-basis>`
