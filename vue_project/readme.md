@@ -43,3 +43,5 @@
 #### this: this.variable will look for a `variable` that has been defined in the `data()` field.
 
 #### v-html: Will interpret html tags in `data()` variables. (May cause the xss problem)
+
+#### v-on: A listener that can monitor onclick, onmouseup ... etc.
