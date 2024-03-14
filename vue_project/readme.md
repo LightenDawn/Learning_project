@@ -24,3 +24,22 @@
 #### React: Lean and focused component-baased UI library.
 
 #### Angular: Complete component-based UI framework. Use TypeScript.
+
+
+### Syntax
+
+#### Vue.createApp(): Initialize the vue object.
+
+#### data(): Define the key:value object, and set the value through `{{}}`.
+
+#### methods: Define function names that can be used by vue objects.
+
+#### v-bind: to set value of something.
+
+- v-bind:href="vueLink" => dynamic set value to href element
+
+#### {{}}: to set value to the html element
+
+#### this: this.variable will look for a `variable` that has been defined in the `data()` field.
+
+#### v-html: Will interpret html tags in `data()` variables. (May cause the xss problem)

@@ -1,13 +1,21 @@
-const buttonEl = document.querySelector('button');
-const inputEl = document.querySelector('input');
-const listEl = document.querySelector('ul');
+const app = Vue.createApp({
+    data() {
+        return {
+            courseGoalA: 'Finish the course and laern Vue!',
+            courseGoalB: 'Master Vue aand build amazing apps!',
+            vueLink: 'https://google.com.tw'
+        };
+    },
+    methods: {
+        outputGoal() {
+            const randomNumber = Math.random();
+            if (randomNumber < 0.5) {
+                return this.courseGoalA;
+            } else {
+                return this.courseGoalB;
+            }
+        }
+    }
+});
 
-function addGoal() {
-  const enteredValue = inputEl.value;
-  const listItemEl = document.createElement('li');
-  listItemEl.textContent = enteredValue;
-  listEl.appendChild(listItemEl);
-  inputEl.value = '';
-}
-
-buttonEl.addEventListener('click', addGoal);
+app.mount('#user-goal');
